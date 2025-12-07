@@ -31,9 +31,6 @@ def get_bank_max_joltage_part2(bank):
         bank_output += bank_copy[max_index]
         bank_copy = bank_copy[max_index+1:]
 
-        if window_start == 11:
-            bank_copy = bank_copy[:11] + bank_copy[max_index]
-
     return int(bank_output)
 
 def part1(lines):
